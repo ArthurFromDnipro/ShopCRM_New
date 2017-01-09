@@ -1,0 +1,1 @@
+mysql -uoleg -pBeHapp2014 </srv/every_day_update.sql >/srv/every_day_update.log

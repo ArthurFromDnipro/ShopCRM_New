@@ -1,0 +1,2086 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="85c9fda0-d04f-4392-bcaf-d1b781a257f4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/AppConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/AppConfigSMS.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/Application$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/Application.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/ControllerImport.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/ControllerMain.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/ControllerOrder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/ControllerSendOrders.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/ControllerSmsSend.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/ChannelType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/ChannelTypeDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/ClientType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/ClientTypeDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/Clients.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/ClientsDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/CrmService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/CustomUser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/DeliveryStatus.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/DeliveryStatusDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/DeliveryType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/DeliveryTypeDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/MoneyBack.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/MoneyBackDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/OrderDetails.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/OrderDetailsDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/OrderStatus.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/OrderStatusDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/Orders.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/OrdersDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/PaymentStatus.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/PaymentStatusDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/PaymentType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/PaymentTypeDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/RefusedOrders.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/RefusedOrdersDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/UserDetailsServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/UserRepository.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/UserRole.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/UserService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/DB/UserServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/LoginController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/SecurityConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/CitiesReuest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPArea.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPAreaDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPBackwardDeliveryCargoTypes.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPBackwardDeliveryCargoTypesDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPBackwardDeliveryData.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPCargoDescriptionList.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPCargoDescriptionListDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPCargoTypes.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPCargoTypesDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPCities.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPCitiesDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPContactPerson.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPContactPersonDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPContactPersonsRequest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPCounterparty.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPCounterpartyCreate.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPCounterpartyDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPCounterpartyRequest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPCounterpartyResponse.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPDocumentStatuses.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPDocumentStatusesDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPDocuments.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPInternetDocResponse.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPInternetDocument.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPOptionsSeat.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPRequest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPResponse.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPServiceTypes.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPServiceTypesDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPTrackingDocumentRequest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPTrackingDocumentResonse.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPTypesOfPayersForRedelivery.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPTypesOfPayersForRedeliveryDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPWarehouseTypes.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPWarehouseTypesDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPWarehouses.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NPWarehousesDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NovaPoshtaController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NovaPoshtaJSON.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/novaposhta/NovaPoshtaService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/Attribute.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/AttributeDescription.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/AttributeDescriptionPK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/AttributeGroup.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/AttributeGroupDescription.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/AttributeGroupDescriptionPK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/CaregoryDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/Category.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/CategoryDescription.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/CategoryDescriptionPK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/CategoryParentConvertor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/Currency.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/CurrencyDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/Customer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/Language.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/OpencartService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/Option.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/OptionDescription.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/OptionDescriptionPK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/OptionValue.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/OptionValueDescription.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/OptionValueDescriptionPK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/Order.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/OrderDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/OrderProduct.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/OrderSimpleField.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/Product.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/ProductAttribute.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/ProductAttributePK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/ProductDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/ProductDescription.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/ProductDescriptionPK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/ProductDiscount.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/ProductImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/ProductOption.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/ProductOptionValue.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/ProductSpecial.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/ProductToCategory.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/opencart/ProductToCategoryPK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/DataRequest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/DataResponse.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/Hash.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/Info.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/Merchant.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/Payment.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/PrivatBank$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/PrivatBank$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/PrivatBank.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/PrivatbankController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/PrivatbankService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/Prop.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/Request.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/Response.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/Statement.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/StatementDB.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/StatementDBDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/StatementDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/crm/privatbank/Statements.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/turbosms/SmsStatus.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/turbosms/TurboSms.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/turbosms/TurboSmsController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/turbosms/TurboSmsDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ua/turbosms/TurboSmsService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT.war" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT.war.original" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/AppConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/AppConfigSMS.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/Application$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/Application.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/ControllerImport.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/ControllerMain.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/ControllerOrder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/ControllerSendOrders.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/ControllerSmsSend.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/ChannelType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/ChannelTypeDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/ClientType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/ClientTypeDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/Clients.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/ClientsDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/CrmService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/CustomUser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/DeliveryStatus.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/DeliveryStatusDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/DeliveryType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/DeliveryTypeDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/MoneyBack.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/MoneyBackDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/OrderDetails.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/OrderDetailsDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/OrderStatus.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/OrderStatusDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/Orders.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/OrdersDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/PaymentStatus.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/PaymentStatusDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/PaymentType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/PaymentTypeDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/RefusedOrders.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/RefusedOrdersDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/UserDetailsServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/UserRepository.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/UserRole.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/UserService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/DB/UserServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/LoginController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/SecurityConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/CitiesReuest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPArea.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPAreaDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPBackwardDeliveryCargoTypes.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPBackwardDeliveryCargoTypesDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPBackwardDeliveryData.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPCargoDescriptionList.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPCargoDescriptionListDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPCargoTypes.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPCargoTypesDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPCities.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPCitiesDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPContactPerson.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPContactPersonDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPContactPersonsRequest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPCounterparty.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPCounterpartyCreate.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPCounterpartyDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPCounterpartyRequest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPCounterpartyResponse.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPDocumentStatuses.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPDocumentStatusesDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPDocuments.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPInternetDocResponse.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPInternetDocument.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPOptionsSeat.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPRequest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPResponse.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPServiceTypes.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPServiceTypesDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPTrackingDocumentRequest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPTrackingDocumentResonse.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPTypesOfPayersForRedelivery.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPTypesOfPayersForRedeliveryDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPWarehouseTypes.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPWarehouseTypesDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPWarehouses.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NPWarehousesDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NovaPoshtaController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NovaPoshtaJSON.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/novaposhta/NovaPoshtaService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/Attribute.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/AttributeDescription.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/AttributeDescriptionPK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/AttributeGroup.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/AttributeGroupDescription.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/AttributeGroupDescriptionPK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/CaregoryDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/Category.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/CategoryDescription.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/CategoryDescriptionPK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/CategoryParentConvertor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/Currency.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/CurrencyDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/Customer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/Language.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/OpencartService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/Option.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/OptionDescription.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/OptionDescriptionPK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/OptionValue.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/OptionValueDescription.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/OptionValueDescriptionPK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/Order.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/OrderDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/OrderProduct.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/OrderSimpleField.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/Product.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/ProductAttribute.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/ProductAttributePK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/ProductDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/ProductDescription.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/ProductDescriptionPK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/ProductDiscount.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/ProductImage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/ProductOption.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/ProductOptionValue.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/ProductSpecial.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/ProductToCategory.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/opencart/ProductToCategoryPK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/DataRequest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/DataResponse.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/Hash.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/Info.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/Merchant.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/Payment.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/PrivatBank$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/PrivatBank$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/PrivatBank.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/PrivatbankController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/PrivatbankService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/Prop.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/Request.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/Response.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/Statement.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/StatementDB.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/StatementDBDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/StatementDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/crm/privatbank/Statements.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/turbosms/SmsStatus.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/turbosms/TurboSms.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/turbosms/TurboSmsController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/turbosms/TurboSmsDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/ua/turbosms/TurboSmsService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.8.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/classmate-1.1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/dom4j-1.6.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/ecj-4.4.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/gson-2.2.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-4.0.5.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/hibernate-core-4.3.11.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/hibernate-entitymanager-4.3.11.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/hibernate-validator-5.2.2.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.6.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.6.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.6.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/jandex-1.1.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.18.1-GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/javax.servlet-api-3.1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/javax.transaction-api-1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-1.7.13.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.13.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/log4j-over-slf4j-1.7.13.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/logback-core-1.1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.34.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.13.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/snakeyaml-1.16.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.2.4.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-aspects-4.2.4.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.2.4.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-1.3.2.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-actuator-1.3.2.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-1.3.2.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-1.3.2.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-actuator-1.3.2.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-aop-1.3.2.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-data-jpa-1.3.2.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-jdbc-1.3.2.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-1.3.2.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-tomcat-1.3.2.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-validation-1.3.2.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-1.3.2.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.2.4.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.2.4.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-data-commons-1.11.2.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-data-jpa-1.9.2.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.2.4.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.2.4.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-orm-4.2.4.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-security-config-4.1.0.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-security-core-4.0.3.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-security-web-4.1.0.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.2.4.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.2.4.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-core-8.0.30.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-el-8.0.30.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-jasper-8.0.30.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-logging-juli-8.0.30.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-websocket-8.0.30.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/tomcat-jdbc-8.0.30.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/tomcat-juli-8.0.30.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/validation-api-1.1.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/lib/xml-apis-1.0.b2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/shop_crm.war" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ShopCRM_New_war.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ShopCRM_New_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_34.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_0_30.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_0_30.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_jasper_8_0_30.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_logging_juli_8_0_30.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_0_30.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_0_30.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_0_30.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_core_compiler_ecj_4_4_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_11_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_3_11_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_2_2_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_3_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_1_3_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_3_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_3_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_1_3_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_3_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_3_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_3_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_3_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_3_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_1_3_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_3_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_11_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_9_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_1_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_0_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_1_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_16.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShopCRM_New.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other_files/autoupdate.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other_files/backup_bd.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other_files/every_day_update.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other_files/every_day_update.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other_files/every_day_update_bd.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other_files/evey_day_update.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other_files/nohup.out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other_files/np_c_w_update.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other_files/shop_crm.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other_files/shop_crm.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other_files/shopcrmtmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other_files/status_update.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other_files/stop.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/AppConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/AppConfigOpencart.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/AppConfigSMS.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/Application.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/ControllerImport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/ControllerMain.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/ControllerOrder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/ControllerSendOrders.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/ControllerSmsSend.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/ChannelType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/ChannelTypeDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/ClientType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/ClientTypeDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/Clients.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/ClientsDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/CrmService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/CustomUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/DeliveryStatus.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/DeliveryStatusDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/DeliveryType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/DeliveryTypeDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/MoneyBack.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/MoneyBackDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/OrderDetails.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/OrderDetailsDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/OrderStatus.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/OrderStatusDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/Orders.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/OrdersDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/PaymentStatus.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/PaymentStatusDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/PaymentType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/PaymentTypeDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/RefusedOrders.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/RefusedOrdersDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/UserDetailsServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/UserRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/UserRole.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/UserService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/DB/UserServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/LoginController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/SecurityConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/CitiesReuest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPArea.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPAreaDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPBackwardDeliveryCargoTypes.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPBackwardDeliveryCargoTypesDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPBackwardDeliveryData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPCargoDescriptionList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPCargoDescriptionListDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPCargoTypes.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPCargoTypesDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPCities.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPCitiesDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPContactPerson.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPContactPersonDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPContactPersonsRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPCounterparty.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPCounterpartyCreate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPCounterpartyDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPCounterpartyRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPCounterpartyResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPDocumentStatuses.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPDocumentStatusesDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPDocuments.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPField.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPInternetDocResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPInternetDocument.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPOptionsSeat.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPServiceTypes.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPServiceTypesDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPTrackingDocumentRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPTrackingDocumentResonse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPTypesOfPayersForRedelivery.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPTypesOfPayersForRedeliveryDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPWarehouseTypes.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPWarehouseTypesDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPWarehouses.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NPWarehousesDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NovaPoshtaController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NovaPoshtaJSON.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NovaPoshtaService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/Attribute.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/AttributeDescription.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/AttributeDescriptionPK.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/AttributeGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/AttributeGroupDescription.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/AttributeGroupDescriptionPK.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/CaregoryDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/Category.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/CategoryDescription.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/CategoryDescriptionPK.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/CategoryParentConvertor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/Currency.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/CurrencyDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/Customer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/Language.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/OpencartService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/Option.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/OptionDescription.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/OptionDescriptionPK.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/OptionValue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/OptionValueDescription.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/OptionValueDescriptionPK.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/Order.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/OrderDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/OrderProduct.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/OrderSimpleField.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/Product.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductAttribute.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductAttributePK.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductDescription.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductDescriptionPK.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductDiscount.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductOption.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductOptionValue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductSpecial.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductToCategory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductToCategoryPK.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/DataRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/DataResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/Hash.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/Info.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/Merchant.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/Payment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/PrivatBank.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/PrivatbankController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/PrivatbankService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/Prop.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/Request.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/Response.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/Statement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/StatementDB.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/StatementDBDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/StatementDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/Statements.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/turbosms/SmsStatus.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/turbosms/TurboSms.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/turbosms/TurboSmsController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/turbosms/TurboSmsDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/turbosms/TurboSmsService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/SQL_copy_data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/SQL_for_link_tabels" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/css/stylesheet.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/import.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/old_deliveries.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/payment.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/review_request.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sales.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/send_orders.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sms_send.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/unauthorized.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/SQL_copy_data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/SQL_for_link_tabels" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/config.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/SQL_copy_data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/SQL_for_link_tabels" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/application.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/classes/config.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/pages/admin.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/pages/css/stylesheet.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/pages/import.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/pages/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/pages/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/pages/old_deliveries.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/pages/order.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/pages/payment.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/pages/review_request.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/pages/sales.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/pages/send_orders.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/pages/sms_send.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/pages/unauthorized.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/crm.ua-1.0-SNAPSHOT/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+    </list>
+    <ignored path="ShopCRM_New.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ShopCRM_New" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="NovaPoshtaController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NovaPoshtaController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControllerOrder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/ControllerOrder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1452">
+              <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrdersDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/DB/OrdersDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControllerMain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/ControllerMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="880">
+              <caret line="58" column="13" selection-start-line="54" selection-start-column="10" selection-end-line="58" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="46" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Orders.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/DB/Orders.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#3200#3201#0" expanded="false" />
+                <element signature="e#3225#3226#0" expanded="false" />
+                <element signature="e#3258#3259#0" expanded="false" />
+                <element signature="e#3286#3287#0" expanded="false" />
+                <element signature="e#3320#3321#0" expanded="false" />
+                <element signature="e#3352#3353#0" expanded="false" />
+                <element signature="e#3400#3401#0" expanded="false" />
+                <element signature="e#3442#3443#0" expanded="false" />
+                <element signature="e#3476#3477#0" expanded="false" />
+                <element signature="e#3505#3506#0" expanded="false" />
+                <element signature="e#3550#3551#0" expanded="false" />
+                <element signature="e#3586#3587#0" expanded="false" />
+                <element signature="e#3631#3632#0" expanded="false" />
+                <element signature="e#3666#3667#0" expanded="false" />
+                <element signature="e#3728#3729#0" expanded="false" />
+                <element signature="e#3776#3777#0" expanded="false" />
+                <element signature="e#3819#3820#0" expanded="false" />
+                <element signature="e#3853#3854#0" expanded="false" />
+                <element signature="e#3912#3913#0" expanded="false" />
+                <element signature="e#3958#3959#0" expanded="false" />
+                <element signature="e#4005#4006#0" expanded="false" />
+                <element signature="e#4041#4042#0" expanded="false" />
+                <element signature="e#4106#4107#0" expanded="false" />
+                <element signature="e#4156#4157#0" expanded="false" />
+                <element signature="e#4205#4206#0" expanded="false" />
+                <element signature="e#4242#4243#0" expanded="false" />
+                <element signature="e#4310#4311#0" expanded="false" />
+                <element signature="e#4362#4363#0" expanded="false" />
+                <element signature="e#4405#4406#0" expanded="false" />
+                <element signature="e#4439#4440#0" expanded="false" />
+                <element signature="e#4498#4499#0" expanded="false" />
+                <element signature="e#4544#4545#0" expanded="false" />
+                <element signature="e#4587#4588#0" expanded="false" />
+                <element signature="e#4621#4622#0" expanded="false" />
+                <element signature="e#4680#4681#0" expanded="false" />
+                <element signature="e#4726#4727#0" expanded="false" />
+                <element signature="e#4761#4762#0" expanded="false" />
+                <element signature="e#4792#4793#0" expanded="false" />
+                <element signature="e#4840#4841#0" expanded="false" />
+                <element signature="e#4880#4881#0" expanded="false" />
+                <element signature="e#5128#5129#0" expanded="false" />
+                <element signature="e#5163#5164#0" expanded="false" />
+                <element signature="e#5218#5219#0" expanded="false" />
+                <element signature="e#5266#5267#0" expanded="false" />
+                <element signature="e#5304#5305#0" expanded="false" />
+                <element signature="e#5338#5339#0" expanded="false" />
+                <element signature="e#5716#5717#0" expanded="false" />
+                <element signature="e#5762#5763#0" expanded="false" />
+                <element signature="e#5797#5798#0" expanded="false" />
+                <element signature="e#5828#5829#0" expanded="false" />
+                <element signature="e#5876#5877#0" expanded="false" />
+                <element signature="e#5916#5917#0" expanded="false" />
+                <element signature="e#5951#5952#0" expanded="false" />
+                <element signature="e#5981#5982#0" expanded="false" />
+                <element signature="e#6028#6029#0" expanded="false" />
+                <element signature="e#6066#6067#0" expanded="false" />
+                <element signature="e#6099#6100#0" expanded="false" />
+                <element signature="e#6130#6131#0" expanded="false" />
+                <element signature="e#6176#6177#0" expanded="false" />
+                <element signature="e#6216#6217#0" expanded="false" />
+                <element signature="e#6262#6263#0" expanded="false" />
+                <element signature="e#6306#6307#0" expanded="false" />
+                <element signature="e#6486#6487#0" expanded="false" />
+                <element signature="e#6523#6524#0" expanded="false" />
+                <element signature="e#6584#6585#0" expanded="false" />
+                <element signature="e#6636#6637#0" expanded="false" />
+                <element signature="e#6687#6688#0" expanded="false" />
+                <element signature="e#6722#6723#0" expanded="false" />
+                <element signature="e#6790#6791#0" expanded="false" />
+                <element signature="e#6838#6839#0" expanded="false" />
+                <element signature="e#6869#6870#0" expanded="false" />
+                <element signature="e#6897#6898#0" expanded="false" />
+                <element signature="e#6938#6939#0" expanded="false" />
+                <element signature="e#6972#6973#0" expanded="false" />
+                <element signature="e#7014#7015#0" expanded="false" />
+                <element signature="e#7047#7048#0" expanded="false" />
+                <element signature="e#7104#7105#0" expanded="false" />
+                <element signature="e#7148#7149#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="946">
+              <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/ControllerSendOrders.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sales.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/ControllerSmsSend.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/old_deliveries.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/privatbank/Merchant.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/SQL_copy_data" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/Attribute.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/AttributeDescription.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/AttributeGroup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/AttributeGroupDescription.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/CategoryDescription.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/Currency.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/Language.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/Option.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/OptionDescription.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/OptionValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/OptionValueDescription.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/OrderProduct.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/OrderSimpleField.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductAttribute.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductDescription.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductDiscount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductImage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductOption.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductSpecial.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductToCategory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/ControllerImport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NovaPoshtaController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/AppConfigSMS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/DB/Clients.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/DB/OrdersDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/DB/CrmService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/ControllerMain.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/crm/ControllerOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:/Program Files (x86)/apache-maven-3.3.9" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShopCRM_New" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShopCRM_New" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShopCRM_New" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShopCRM_New" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShopCRM_New" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShopCRM_New" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShopCRM_New" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShopCRM_New" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShopCRM_New" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ua" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="BatchConfigurationType" factoryName="Batch">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ShopCRM_New" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="false" name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ua.Application" />
+      <module name="ShopCRM_New" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.Application" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85c9fda0-d04f-4392-bcaf-d1b781a257f4" name="Default" comment="" />
+      <created>1478607996907</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1478607996907</updated>
+      <workItem from="1478608000742" duration="32463000" />
+      <workItem from="1479153350509" duration="11260000" />
+      <workItem from="1479590752044" duration="69000" />
+      <workItem from="1479752116948" duration="848000" />
+      <workItem from="1480083260279" duration="2843000" />
+      <workItem from="1481134826353" duration="1838000" />
+      <workItem from="1483959680239" duration="92000" />
+      <workItem from="1483959904845" duration="729000" />
+      <workItem from="1483966474423" duration="670000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="50812000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971016" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24624464" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.352657" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/Currency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/Language.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/OpencartService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/Option.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/OptionDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/OptionValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/OptionValueDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/OptionValueDescriptionPK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductAttributePK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductDescriptionPK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductDiscount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductOption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductSpecial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductToCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductToCategoryPK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/OrderProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/OrderSimpleField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/opencart/ProductAttribute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/turbosms/TurboSmsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NovaPoshtaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="176" column="0" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/AppConfigOpencart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="72" column="46" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sales.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/send_orders.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/SQL_copy_data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="651" column="0" selection-start-line="264" selection-start-column="0" selection-end-line="651" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/AppConfigSMS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/ControllerSendOrders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/review_request.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/ControllerImport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="78" column="26" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/DB/Clients.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1804">
+          <caret line="107" column="41" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/DB/CrmService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2992">
+          <caret line="169" column="56" selection-start-line="169" selection-start-column="56" selection-end-line="169" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1126#1127#0" expanded="false" />
+            <element signature="e#1168#1169#0" expanded="false" />
+            <element signature="e#1269#1270#0" expanded="false" />
+            <element signature="e#1328#1329#0" expanded="false" />
+            <element signature="e#1420#1421#0" expanded="false" />
+            <element signature="e#1475#1476#0" expanded="false" />
+            <element signature="e#1896#1897#0" expanded="false" />
+            <element signature="e#1943#1944#0" expanded="false" />
+            <element signature="e#2041#2042#0" expanded="false" />
+            <element signature="e#2098#2099#0" expanded="false" />
+            <element signature="e#2183#2184#0" expanded="false" />
+            <element signature="e#2231#2232#0" expanded="false" />
+            <element signature="e#2691#2692#0" expanded="false" />
+            <element signature="e#2728#2729#0" expanded="false" />
+            <element signature="e#2793#2794#0" expanded="false" />
+            <element signature="e#2832#2833#0" expanded="false" />
+            <element signature="e#2907#2908#0" expanded="false" />
+            <element signature="e#2950#2951#0" expanded="false" />
+            <element signature="e#3272#3273#0" expanded="false" />
+            <element signature="e#3322#3323#0" expanded="false" />
+            <element signature="e#4101#4102#0" expanded="false" />
+            <element signature="e#4161#4162#0" expanded="false" />
+            <element signature="e#4238#4239#0" expanded="false" />
+            <element signature="e#4289#4290#0" expanded="false" />
+            <element signature="e#4713#4714#0" expanded="false" />
+            <element signature="e#4762#4763#0" expanded="false" />
+            <element signature="e#4995#4996#0" expanded="false" />
+            <element signature="e#5048#5049#0" expanded="false" />
+            <element signature="e#5130#5131#0" expanded="false" />
+            <element signature="e#5176#5177#0" expanded="false" />
+            <element signature="e#5452#5453#0" expanded="false" />
+            <element signature="e#5495#5496#0" expanded="false" />
+            <element signature="e#5582#5583#0" expanded="false" />
+            <element signature="e#5631#5632#0" expanded="false" />
+            <element signature="e#5722#5723#0" expanded="false" />
+            <element signature="e#5773#5774#0" expanded="false" />
+            <element signature="e#5996#5997#0" expanded="false" />
+            <element signature="e#6046#6047#0" expanded="false" />
+            <element signature="e#6131#6132#0" expanded="false" />
+            <element signature="e#6179#6180#0" expanded="false" />
+            <element signature="e#6264#6265#0" expanded="false" />
+            <element signature="e#6312#6313#0" expanded="false" />
+            <element signature="e#6404#6405#0" expanded="false" />
+            <element signature="e#6454#6455#0" expanded="false" />
+            <element signature="e#6541#6542#0" expanded="false" />
+            <element signature="e#6589#6590#0" expanded="false" />
+            <element signature="e#6678#6679#0" expanded="false" />
+            <element signature="e#6727#6728#0" expanded="false" />
+            <element signature="e#6812#6813#0" expanded="false" />
+            <element signature="e#6859#6860#0" expanded="false" />
+            <element signature="e#6944#6945#0" expanded="false" />
+            <element signature="e#6991#6992#0" expanded="false" />
+            <element signature="e#7076#7077#0" expanded="false" />
+            <element signature="e#7123#7124#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/novaposhta/NovaPoshtaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/ControllerMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="58" column="13" selection-start-line="54" selection-start-column="10" selection-end-line="58" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/ControllerOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1452">
+          <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/DB/Orders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#3200#3201#0" expanded="false" />
+            <element signature="e#3225#3226#0" expanded="false" />
+            <element signature="e#3258#3259#0" expanded="false" />
+            <element signature="e#3286#3287#0" expanded="false" />
+            <element signature="e#3320#3321#0" expanded="false" />
+            <element signature="e#3352#3353#0" expanded="false" />
+            <element signature="e#3400#3401#0" expanded="false" />
+            <element signature="e#3442#3443#0" expanded="false" />
+            <element signature="e#3476#3477#0" expanded="false" />
+            <element signature="e#3505#3506#0" expanded="false" />
+            <element signature="e#3550#3551#0" expanded="false" />
+            <element signature="e#3586#3587#0" expanded="false" />
+            <element signature="e#3631#3632#0" expanded="false" />
+            <element signature="e#3666#3667#0" expanded="false" />
+            <element signature="e#3728#3729#0" expanded="false" />
+            <element signature="e#3776#3777#0" expanded="false" />
+            <element signature="e#3819#3820#0" expanded="false" />
+            <element signature="e#3853#3854#0" expanded="false" />
+            <element signature="e#3912#3913#0" expanded="false" />
+            <element signature="e#3958#3959#0" expanded="false" />
+            <element signature="e#4005#4006#0" expanded="false" />
+            <element signature="e#4041#4042#0" expanded="false" />
+            <element signature="e#4106#4107#0" expanded="false" />
+            <element signature="e#4156#4157#0" expanded="false" />
+            <element signature="e#4205#4206#0" expanded="false" />
+            <element signature="e#4242#4243#0" expanded="false" />
+            <element signature="e#4310#4311#0" expanded="false" />
+            <element signature="e#4362#4363#0" expanded="false" />
+            <element signature="e#4405#4406#0" expanded="false" />
+            <element signature="e#4439#4440#0" expanded="false" />
+            <element signature="e#4498#4499#0" expanded="false" />
+            <element signature="e#4544#4545#0" expanded="false" />
+            <element signature="e#4587#4588#0" expanded="false" />
+            <element signature="e#4621#4622#0" expanded="false" />
+            <element signature="e#4680#4681#0" expanded="false" />
+            <element signature="e#4726#4727#0" expanded="false" />
+            <element signature="e#4761#4762#0" expanded="false" />
+            <element signature="e#4792#4793#0" expanded="false" />
+            <element signature="e#4840#4841#0" expanded="false" />
+            <element signature="e#4880#4881#0" expanded="false" />
+            <element signature="e#5128#5129#0" expanded="false" />
+            <element signature="e#5163#5164#0" expanded="false" />
+            <element signature="e#5218#5219#0" expanded="false" />
+            <element signature="e#5266#5267#0" expanded="false" />
+            <element signature="e#5304#5305#0" expanded="false" />
+            <element signature="e#5338#5339#0" expanded="false" />
+            <element signature="e#5716#5717#0" expanded="false" />
+            <element signature="e#5762#5763#0" expanded="false" />
+            <element signature="e#5797#5798#0" expanded="false" />
+            <element signature="e#5828#5829#0" expanded="false" />
+            <element signature="e#5876#5877#0" expanded="false" />
+            <element signature="e#5916#5917#0" expanded="false" />
+            <element signature="e#5951#5952#0" expanded="false" />
+            <element signature="e#5981#5982#0" expanded="false" />
+            <element signature="e#6028#6029#0" expanded="false" />
+            <element signature="e#6066#6067#0" expanded="false" />
+            <element signature="e#6099#6100#0" expanded="false" />
+            <element signature="e#6130#6131#0" expanded="false" />
+            <element signature="e#6176#6177#0" expanded="false" />
+            <element signature="e#6216#6217#0" expanded="false" />
+            <element signature="e#6262#6263#0" expanded="false" />
+            <element signature="e#6306#6307#0" expanded="false" />
+            <element signature="e#6486#6487#0" expanded="false" />
+            <element signature="e#6523#6524#0" expanded="false" />
+            <element signature="e#6584#6585#0" expanded="false" />
+            <element signature="e#6636#6637#0" expanded="false" />
+            <element signature="e#6687#6688#0" expanded="false" />
+            <element signature="e#6722#6723#0" expanded="false" />
+            <element signature="e#6790#6791#0" expanded="false" />
+            <element signature="e#6838#6839#0" expanded="false" />
+            <element signature="e#6869#6870#0" expanded="false" />
+            <element signature="e#6897#6898#0" expanded="false" />
+            <element signature="e#6938#6939#0" expanded="false" />
+            <element signature="e#6972#6973#0" expanded="false" />
+            <element signature="e#7014#7015#0" expanded="false" />
+            <element signature="e#7047#7048#0" expanded="false" />
+            <element signature="e#7104#7105#0" expanded="false" />
+            <element signature="e#7148#7149#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/crm/DB/OrdersDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

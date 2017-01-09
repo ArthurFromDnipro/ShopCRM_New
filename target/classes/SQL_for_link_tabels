@@ -1,0 +1,452 @@
+USE shopcrm;
+DROP TABLE oc_language;
+DROP TABLE oc_attribute ;
+DROP TABLE oc_attribute_description;
+DROP TABLE oc_attribute_group;
+DROP TABLE oc_attribute_group_description ;
+DROP TABLE oc_category;
+DROP TABLE oc_category_description;
+DROP TABLE oc_currency;
+DROP TABLE oc_customer;
+DROP TABLE oc_option;
+DROP TABLE oc_option_description;
+DROP TABLE oc_option_value;
+DROP TABLE oc_option_value_description;
+DROP TABLE oc_order;
+DROP TABLE oc_order_option;
+DROP TABLE oc_order_simple_fields;
+DROP TABLE oc_order_product;
+DROP TABLE oc_product;
+DROP TABLE oc_product_attribute;
+DROP TABLE oc_product_description;
+DROP TABLE oc_product_discount;
+DROP TABLE oc_product_image;
+DROP TABLE oc_product_option;
+DROP TABLE oc_product_option_value;
+DROP TABLE oc_product_special;
+DROP TABLE oc_product_to_category;
+
+CREATE TABLE oc_language
+(`language_id` int(11) NOT NULL AUTO_INCREMENT,
+ `name` varchar(32) NOT NULL,
+ `code` varchar(5) NOT NULL,
+ `locale` varchar(255) NOT NULL,
+ `image` varchar(64) NOT NULL,
+ `directory` varchar(32) NOT NULL,
+ `filename` varchar(64) NOT NULL,
+ `sort_order` int(3) NOT NULL DEFAULT '0',
+ `status` tinyint(1) NOT NULL,
+ PRIMARY KEY (`language_id`),
+ KEY `name` (`name`)
+)
+ENGINE=FEDERATED AUTO_INCREMENT=4 DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_language';
+
+CREATE TABLE `oc_attribute` (
+  `attribute_id` int(11) NOT NULL AUTO_INCREMENT,
+  `attribute_group_id` int(11) NOT NULL,
+  `sort_order` int(3) NOT NULL,
+  PRIMARY KEY (`attribute_id`)
+) ENGINE=FEDERATED AUTO_INCREMENT=26 DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_attribute';
+
+CREATE TABLE `oc_attribute_description` (
+  `attribute_id` int(11) NOT NULL,
+  `language_id` int(11) NOT NULL,
+  `name` varchar(64) NOT NULL,
+  PRIMARY KEY (`attribute_id`,`language_id`)
+) ENGINE=FEDERATED DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_attribute_description';
+
+CREATE TABLE `oc_attribute_group` (
+  `attribute_group_id` int(11) NOT NULL AUTO_INCREMENT,
+  `sort_order` int(3) NOT NULL,
+  PRIMARY KEY (`attribute_group_id`)
+) ENGINE=FEDERATED AUTO_INCREMENT=16 DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_attribute_group';
+
+CREATE TABLE `oc_attribute_group_description` (
+  `attribute_group_id` int(11) NOT NULL,
+  `language_id` int(11) NOT NULL,
+  `name` varchar(64) NOT NULL,
+  PRIMARY KEY (`attribute_group_id`,`language_id`)
+) ENGINE=FEDERATED DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_attribute_group_description';
+
+CREATE TABLE `oc_category` (
+  `category_id` int(11) NOT NULL AUTO_INCREMENT,
+  `image` varchar(255) DEFAULT NULL,
+  `parent_id` int(11) NOT NULL DEFAULT '0',
+  `top` tinyint(1) NOT NULL,
+  `column` int(3) NOT NULL,
+  `sort_order` int(3) NOT NULL DEFAULT '0',
+  `status` tinyint(1) NOT NULL,
+  `date_added` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `date_modified` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`category_id`)
+) ENGINE=FEDERATED AUTO_INCREMENT=196 DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_category';
+
+CREATE TABLE `oc_category_description` (
+  `category_id` int(11) NOT NULL,
+  `language_id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  `meta_description` varchar(255) NOT NULL,
+  `meta_keyword` varchar(255) NOT NULL,
+  `seo_title` varchar(255) NOT NULL,
+  `seo_h1` varchar(255) NOT NULL,
+  PRIMARY KEY (`category_id`,`language_id`),
+  KEY `name` (`name`)
+) ENGINE=FEDERATED DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_category_description';
+
+CREATE TABLE `oc_currency` (
+  `currency_id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(32) NOT NULL,
+  `code` varchar(3) NOT NULL,
+  `symbol_left` varchar(12) NOT NULL,
+  `symbol_right` varchar(12) NOT NULL,
+  `decimal_place` char(1) NOT NULL,
+  `value` float(15,8) NOT NULL,
+  `status` tinyint(1) NOT NULL,
+  `date_modified` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`currency_id`)
+) ENGINE=FEDERATED AUTO_INCREMENT=5 DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_currency';
+
+CREATE TABLE `oc_customer` (
+  `customer_id` int(11) NOT NULL AUTO_INCREMENT,
+  `store_id` int(11) NOT NULL DEFAULT '0',
+  `firstname` varchar(32) NOT NULL,
+  `lastname` varchar(32) NOT NULL,
+  `avatar` varchar(255) DEFAULT NULL,
+  `email` varchar(96) NOT NULL,
+  `telephone` varchar(32) NOT NULL,
+  `fax` varchar(32) NOT NULL,
+  `password` varchar(40) NOT NULL,
+  `salt` varchar(9) NOT NULL,
+  `cart` text,
+  `wishlist` text,
+  `newsletter` tinyint(1) NOT NULL DEFAULT '0',
+  `address_id` int(11) NOT NULL DEFAULT '0',
+  `customer_group_id` int(11) NOT NULL,
+  `ip` varchar(40) NOT NULL DEFAULT '0',
+  `status` tinyint(1) NOT NULL,
+  `approved` tinyint(1) NOT NULL,
+  `token` varchar(255) NOT NULL,
+  `date_added` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`customer_id`)
+) ENGINE=FEDERATED AUTO_INCREMENT=1442 DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_customer';
+
+CREATE TABLE `oc_option` (
+  `option_id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` varchar(32) NOT NULL,
+  `sort_order` int(3) NOT NULL,
+  PRIMARY KEY (`option_id`)
+) ENGINE=FEDERATED AUTO_INCREMENT=19 DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_option';
+
+CREATE TABLE `oc_option_description` (
+  `option_id` int(11) NOT NULL,
+  `language_id` int(11) NOT NULL,
+  `name` varchar(128) NOT NULL,
+  PRIMARY KEY (`option_id`,`language_id`)
+) ENGINE=FEDERATED DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_option_description';
+
+CREATE TABLE `oc_option_value` (
+  `option_value_id` int(11) NOT NULL AUTO_INCREMENT,
+  `option_id` int(11) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `sort_order` int(3) NOT NULL,
+  PRIMARY KEY (`option_value_id`)
+) ENGINE=FEDERATED AUTO_INCREMENT=136 DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_option_value';
+
+CREATE TABLE `oc_option_value_description` (
+  `option_value_id` int(11) NOT NULL,
+  `language_id` int(11) NOT NULL,
+  `option_id` int(11) NOT NULL,
+  `name` varchar(128) NOT NULL,
+  PRIMARY KEY (`option_value_id`,`language_id`)
+) ENGINE=FEDERATED DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_option_value_description';
+
+CREATE TABLE `oc_order` (
+  `order_id` int(11) NOT NULL AUTO_INCREMENT,
+  `invoice_no` int(11) NOT NULL DEFAULT '0',
+  `invoice_prefix` varchar(26) NOT NULL,
+  `store_id` int(11) NOT NULL DEFAULT '0',
+  `store_name` varchar(64) NOT NULL,
+  `store_url` varchar(255) NOT NULL,
+  `customer_id` int(11) NOT NULL DEFAULT '0',
+  `customer_group_id` int(11) NOT NULL DEFAULT '0',
+  `firstname` varchar(32) NOT NULL,
+  `lastname` varchar(32) NOT NULL,
+  `email` varchar(96) NOT NULL,
+  `telephone` varchar(32) NOT NULL,
+  `fax` varchar(32) NOT NULL,
+  `payment_firstname` varchar(32) NOT NULL,
+  `payment_lastname` varchar(32) NOT NULL,
+  `payment_company` varchar(32) NOT NULL,
+  `payment_company_id` varchar(32) NOT NULL,
+  `payment_tax_id` varchar(32) NOT NULL,
+  `payment_address_1` varchar(128) NOT NULL,
+  `payment_address_2` varchar(128) NOT NULL,
+  `payment_city` varchar(128) NOT NULL,
+  `payment_postcode` varchar(10) NOT NULL,
+  `payment_country` varchar(128) NOT NULL,
+  `payment_country_id` int(11) NOT NULL,
+  `payment_zone` varchar(128) NOT NULL,
+  `payment_zone_id` int(11) NOT NULL,
+  `payment_address_format` text NOT NULL,
+  `payment_method` varchar(128) NOT NULL,
+  `payment_code` varchar(128) NOT NULL,
+  `shipping_firstname` varchar(32) NOT NULL,
+  `shipping_lastname` varchar(32) NOT NULL,
+  `shipping_company` varchar(32) NOT NULL,
+  `shipping_address_1` varchar(128) NOT NULL,
+  `shipping_address_2` varchar(128) NOT NULL,
+  `shipping_city` varchar(128) NOT NULL,
+  `shipping_postcode` varchar(10) NOT NULL,
+  `shipping_country` varchar(128) NOT NULL,
+  `shipping_country_id` int(11) NOT NULL,
+  `shipping_zone` varchar(128) NOT NULL,
+  `shipping_zone_id` int(11) NOT NULL,
+  `shipping_address_format` text NOT NULL,
+  `shipping_method` varchar(128) NOT NULL,
+  `shipping_code` varchar(128) NOT NULL,
+  `comment` text NOT NULL,
+  `total` decimal(15,4) NOT NULL DEFAULT '0.0000',
+  `order_status_id` int(11) NOT NULL DEFAULT '0',
+  `affiliate_id` int(11) NOT NULL,
+  `commission` decimal(15,4) NOT NULL,
+  `language_id` int(11) NOT NULL,
+  `currency_id` int(11) NOT NULL,
+  `currency_code` varchar(3) NOT NULL,
+  `currency_value` decimal(15,8) NOT NULL DEFAULT '1.00000000',
+  `ip` varchar(40) NOT NULL,
+  `forwarded_ip` varchar(40) NOT NULL,
+  `user_agent` varchar(255) NOT NULL,
+  `accept_language` varchar(255) NOT NULL,
+  `date_added` datetime NOT NULL,
+  `date_modified` datetime NOT NULL,
+  PRIMARY KEY (`order_id`),
+  KEY `order_status_id` (`order_status_id`),
+  KEY `customer_id` (`customer_id`)
+) ENGINE=FEDERATED AUTO_INCREMENT=3091 DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_order';
+
+CREATE TABLE `oc_order_option` (
+  `order_option_id` int(11) NOT NULL AUTO_INCREMENT,
+  `order_id` int(11) NOT NULL,
+  `order_product_id` int(11) NOT NULL,
+  `product_option_id` int(11) NOT NULL,
+  `product_option_value_id` int(11) NOT NULL DEFAULT '0',
+  `name` varchar(255) NOT NULL,
+  `value` text NOT NULL,
+  `type` varchar(32) NOT NULL,
+  PRIMARY KEY (`order_option_id`)
+) ENGINE=FEDERATED AUTO_INCREMENT=764 DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_order_option';
+
+
+CREATE TABLE `oc_order_product` (
+  `order_product_id` int(11) NOT NULL AUTO_INCREMENT,
+  `order_id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `model` varchar(64) NOT NULL,
+  `quantity` int(4) NOT NULL,
+  `price` decimal(15,4) NOT NULL DEFAULT '0.0000',
+  `total` decimal(15,4) NOT NULL DEFAULT '0.0000',
+  `tax` decimal(15,4) NOT NULL DEFAULT '0.0000',
+  `reward` int(8) NOT NULL,
+  PRIMARY KEY (`order_product_id`),
+  KEY `order_id` (`order_id`),
+  KEY `product_id` (`product_id`)
+) ENGINE=FEDERATED AUTO_INCREMENT=5863 DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_order_product';
+
+
+CREATE TABLE `oc_order_simple_fields` (
+  `order_id` int(11) NOT NULL,
+  `metadata` text,
+  `payment_new_pochta_id` text,
+  `shipping_new_pochta_id` text,
+  PRIMARY KEY (`order_id`)
+) ENGINE=FEDERATED DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_order_simple_fields';
+
+
+
+CREATE TABLE `oc_product` (
+  `product_id` int(11) NOT NULL AUTO_INCREMENT,
+  `model` varchar(64) NOT NULL,
+  `sku` varchar(64) NOT NULL,
+  `upc` varchar(12) NOT NULL,
+  `ean` varchar(14) NOT NULL,
+  `jan` varchar(13) NOT NULL,
+  `isbn` varchar(13) NOT NULL,
+  `mpn` varchar(64) NOT NULL,
+  `location` varchar(128) NOT NULL,
+  `quantity` int(4) NOT NULL DEFAULT '0',
+  `stock_status_id` int(11) NOT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  `manufacturer_id` int(11) NOT NULL,
+  `shipping` tinyint(1) NOT NULL DEFAULT '1',
+  `price` decimal(15,4) NOT NULL DEFAULT '0.0000',
+  `points` int(8) NOT NULL DEFAULT '0',
+  `tax_class_id` int(11) NOT NULL,
+  `date_available` date NOT NULL,
+  `weight` decimal(15,8) NOT NULL DEFAULT '0.00000000',
+  `weight_class_id` int(11) NOT NULL DEFAULT '0',
+  `length` decimal(15,8) NOT NULL DEFAULT '0.00000000',
+  `width` decimal(15,8) NOT NULL DEFAULT '0.00000000',
+  `height` decimal(15,8) NOT NULL DEFAULT '0.00000000',
+  `length_class_id` int(11) NOT NULL DEFAULT '0',
+  `subtract` tinyint(1) NOT NULL DEFAULT '1',
+  `minimum` int(11) NOT NULL DEFAULT '1',
+  `sort_order` int(11) NOT NULL DEFAULT '0',
+  `status` tinyint(1) NOT NULL DEFAULT '0',
+  `date_added` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `date_modified` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `viewed` int(5) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`product_id`),
+  KEY `wg_statusAndDate` (`status`,`date_available`)
+) ENGINE=FEDERATED AUTO_INCREMENT=6206 DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_product';
+
+
+
+CREATE TABLE `oc_product_attribute` (
+  `product_id` int(11) NOT NULL,
+  `attribute_id` int(11) NOT NULL,
+  `language_id` int(11) NOT NULL,
+  `text` text NOT NULL,
+  PRIMARY KEY (`product_id`,`attribute_id`,`language_id`),
+  KEY `product_id` (`product_id`)
+)
+ENGINE=FEDERATED DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_product_attribute';
+
+
+
+CREATE TABLE `oc_product_description` (
+  `product_id` int(11) NOT NULL,
+  `language_id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  `meta_description` varchar(255) NOT NULL,
+  `meta_keyword` varchar(255) NOT NULL,
+  `seo_title` varchar(255) NOT NULL,
+  `seo_h1` varchar(255) NOT NULL,
+  `tag` text NOT NULL,
+  PRIMARY KEY (`product_id`,`language_id`),
+  KEY `name` (`name`),
+  KEY `wg_language_id` (`language_id`)
+) ENGINE=FEDERATED DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_product_description';
+
+CREATE TABLE `oc_product_discount` (
+  `product_discount_id` int(11) NOT NULL AUTO_INCREMENT,
+  `product_id` int(11) NOT NULL,
+  `customer_group_id` int(11) NOT NULL,
+  `quantity` int(4) NOT NULL DEFAULT '0',
+  `priority` int(5) NOT NULL DEFAULT '1',
+  `price` decimal(15,4) NOT NULL DEFAULT '0.0000',
+  `date_start` date NOT NULL DEFAULT '0000-00-00',
+  `date_end` date NOT NULL DEFAULT '0000-00-00',
+  PRIMARY KEY (`product_discount_id`),
+  KEY `product_id` (`product_id`)
+) ENGINE=FEDERATED AUTO_INCREMENT=452 DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_product_discount';
+
+
+CREATE TABLE `oc_product_image` (
+  `product_image_id` int(11) NOT NULL AUTO_INCREMENT,
+  `product_id` int(11) NOT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  `sort_order` int(3) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`product_image_id`)
+) ENGINE=FEDERATED AUTO_INCREMENT=6466 DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_product_image';
+
+CREATE TABLE `oc_product_option` (
+  `product_option_id` int(11) NOT NULL AUTO_INCREMENT,
+  `product_id` int(11) NOT NULL,
+  `option_id` int(11) NOT NULL,
+  `option_value` text NOT NULL,
+  `required` tinyint(1) NOT NULL,
+  PRIMARY KEY (`product_option_id`)
+) ENGINE=FEDERATED AUTO_INCREMENT=3004 DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_product_option';
+
+CREATE TABLE `oc_product_option_value` (
+  `product_option_value_id` int(11) NOT NULL AUTO_INCREMENT,
+  `product_option_id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `option_id` int(11) NOT NULL,
+  `option_value_id` int(11) NOT NULL,
+  `quantity` int(3) NOT NULL,
+  `subtract` tinyint(1) NOT NULL,
+  `price` decimal(15,4) NOT NULL,
+  `price_prefix` varchar(1) NOT NULL,
+  `points` int(8) NOT NULL,
+  `points_prefix` varchar(1) NOT NULL,
+  `weight` decimal(15,8) NOT NULL,
+  `weight_prefix` varchar(1) NOT NULL,
+  PRIMARY KEY (`product_option_value_id`),
+  KEY `option_value_id` (`option_value_id`),
+  KEY `product_id` (`product_id`)
+) ENGINE=FEDERATED AUTO_INCREMENT=28942 DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_product_option_value';
+
+
+CREATE TABLE `oc_product_special` (
+  `product_special_id` int(11) NOT NULL AUTO_INCREMENT,
+  `product_id` int(11) NOT NULL,
+  `customer_group_id` int(11) NOT NULL,
+  `priority` int(5) NOT NULL DEFAULT '1',
+  `price` decimal(15,4) NOT NULL DEFAULT '0.0000',
+  `date_start` date NOT NULL DEFAULT '0000-00-00',
+  `date_end` date NOT NULL DEFAULT '0000-00-00',
+  PRIMARY KEY (`product_special_id`),
+  KEY `product_id` (`product_id`)
+) ENGINE=FEDERATED AUTO_INCREMENT=23821 DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_product_special';
+
+CREATE TABLE `oc_product_to_category` (
+  `product_id` int(11) NOT NULL,
+  `category_id` int(11) NOT NULL,
+  `main_category` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`product_id`,`category_id`),
+  KEY `wg_category_id` (`category_id`,`product_id`)
+) ENGINE=FEDERATED DEFAULT CHARSET=cp1251
+CONNECTION='mysql://ecoevexm_shopcrm:BeHapp2014@sribnyk.com.ua:3306/ecoevexm_sribdb/oc_product_to_category';
+
+
+CREATE TABLE `sribnyk` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `msg_id` char(36) CHARACTER SET latin1 DEFAULT NULL COMMENT 'UUID сообщения для идентификации',
+  `number` varchar(21) CHARACTER SET latin1 NOT NULL COMMENT 'Номер получателя в международном формате',
+  `sign` varchar(11) CHARACTER SET latin1 NOT NULL COMMENT 'Альфаимя, подпись отправителя',
+  `message` varchar(1530) NOT NULL COMMENT 'Текст sms',
+  `wappush` varchar(128) CHARACTER SET latin1 NOT NULL DEFAULT '' COMMENT 'WapPush ссылка',
+  `is_flash` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT 'Флаг flash сообщения',
+  `cost` decimal(4,2) unsigned DEFAULT NULL COMMENT 'Стоимость сообщения в кредитах',
+  `balance` decimal(10,2) DEFAULT NULL COMMENT 'Остаток на балансе после отправки',
+  `added` timestamp NULL DEFAULT NULL COMMENT 'Временная метка создания записи в базе',
+  `send_time` timestamp NULL DEFAULT NULL COMMENT 'Временная метка запланированной даты отправки',
+  `sended` timestamp NULL DEFAULT NULL COMMENT 'Временная метка фактической отправки сообщения',
+  `received` timestamp NULL DEFAULT NULL COMMENT 'Временная метка смены статуса',
+  `error_code` char(3) DEFAULT NULL COMMENT 'Код ошибки при обработке',
+  `status` enum('ACCEPTD','ENROUTE','DELIVRD','REJECTD','UNDELIV','EXPIRED','DELETED','UNKNOWN') CHARACTER SET latin1 DEFAULT NULL COMMENT 'Код статуса доставки сообщения',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `msg_id` (`msg_id`),
+  KEY `added` (`added`),
+  KEY `status` (`status`)
+) ENGINE=FEDERATED AUTO_INCREMENT=1472 DEFAULT CHARSET=utf8
+CONNECTION='mysql://sribnyk:BeHapp2014@94.249.146.189:3306/users/sribnyk';
